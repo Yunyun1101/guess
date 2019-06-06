@@ -4,12 +4,16 @@
 # 猜錯的話 要告訴他 比答案大/小
 
 import random
+start = input('請決定隨機數字範圍開始值：')
+end = input('請決定隨機數字範圍結束值：')
+start = int(start)
+end = int(end)
 
-answer = random.randint(1, 100)
+answer = random.randint(start, end)
 count = 0
 
 while True :
-	guess = input ('請輸入1至100中的隨機整數:')
+	guess = input ('請猜數字：')
 	guess = int(guess)
 	count += 1 # count = count + 1
 
